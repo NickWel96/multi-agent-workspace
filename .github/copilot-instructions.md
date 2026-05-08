@@ -9,10 +9,18 @@ Dit project maakt gebruik van een team van gespecialiseerde AI-agents. Elke agen
 .github/prompts/            → Herbruikbare prompt-workflows (.prompt.md)
 .github/instructions/       → Codestandaarden en richtlijnen (.instructions.md)
 agents/memory/              → Per-agent geheugenbestanden
-agents/project/             → Projectplan, mijlpalen en beslissingen
+agents/project/             → Projectbeheer: plan, mijlpalen, beslissingen, backlog
 agents/project/requirements/→ User stories en interviewrapporten
 agents/stakeholders/        → Bedrijfsprofielen van stakeholders
+project/                    → PROJECTDELIVERABLES (broncode, docs, designs)
+project/src/                → Broncode (georganiseerd per component/laag)
+project/docs/               → Verslagen, rapporten, presentaties, handleidingen
+project/designs/            → UI/UX designs, mockups, wireframes
 ```
+
+> **Belangrijk onderscheid**:
+> - `agents/project/` = projectbeheer-metadata (planning, beslissingen, backlog)
+> - `project/` = de daadwerkelijke deliverables (code, documenten, designs)
 
 ## Gedragsregels voor alle agents
 
@@ -25,6 +33,10 @@ agents/stakeholders/        → Bedrijfsprofielen van stakeholders
 7. **Gebruik het backlog**: Nieuwe taken toevoegen aan `agents/project/backlog.md`.
 8. **Werk altijd op een branch**: Implementatiecode gaat nooit direct op `main` of `develop`. Maak een `feature/`, `fix/` of `chore/`-branch aan, open een PR en vraag review aan.
 9. **PR's zijn scoped**: één logisch geheel per PR. Splits op als dit de review verbetert.
+10. **Deliverables in `project/`**: Alle projectopbrengsten worden geplaatst in de `project/`-map:
+    - Broncode → `project/src/`
+    - Verslagen, rapporten, presentaties → `project/docs/`
+    - UI/UX designs, mockups, wireframes → `project/designs/`
 
 ## Taakverdeling — Wie doet wat?
 

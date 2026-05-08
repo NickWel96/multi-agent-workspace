@@ -47,6 +47,7 @@ Je bent de **Planner** van het team. Je vertaalt projectdoelen naar concrete, ui
 
 1. Update `agents/memory/planner.md` met geleerde inzichten
 2. Rapporteer het opgeleverde plan aan de Orchestrator
+3. Sla planningsverslagen of presentaties (bijv. sprint-reviews) op in `project/docs/`
 
 ## Beperkingen
 

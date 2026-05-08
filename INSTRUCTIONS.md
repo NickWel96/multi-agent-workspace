@@ -57,8 +57,16 @@ agents/
       consolidation.md
   stakeholders/                    ← Bedrijfsprofielen
     _template.md                   ← Sjabloon voor nieuw bedrijf
+project/                           ← PROJECTDELIVERABLES (aangemaakt bij nieuw project)
+  src/                             ← Broncode (backend, frontend, infra)
+  docs/                            ← Verslagen, rapporten, presentaties, handleidingen
+  designs/                         ← UI/UX designs, mockups, wireframes
+  README.md                        ← Projectoverzicht
 INSTRUCTIONS.md                    ← Dit bestand
 ```
+
+> **Belangrijk**: `agents/project/` bevat **beheerbestanden** (planning, beslissingen, backlog).  
+> `project/` bevat de **daadwerkelijke deliverables** die aan de opdrachtgever worden opgeleverd.
 
 ---
 
@@ -106,6 +114,7 @@ Na de initiële input:
 1. De **Planner** schrijft het projectplan naar `agents/project/plan.md`
 2. De **Architect** definieert de technische architectuur in `agents/project/decisions.md`
 3. De **Orchestrator** vult de backlog met eerste taken in `agents/project/backlog.md`
+4. De **Orchestrator** richt de `project/`-map in als deliverables-werkruimte
 
 ### Stap 5: Begin met ontwikkelen
 Activeer de relevante agent voor de eerste taak:
@@ -275,12 +284,15 @@ Voeg `user-invocable: false` toe aan de frontmatter van de agent om deze uit het
 
 ### Projectbestanden bekijken
 
-| Bestand | Inhoud | Beheerd door |
-|---------|--------|-------------|
+| Bestand/Map | Inhoud | Beheerd door |
+|-------------|--------|-------------|
 | `agents/project/plan.md` | Volledig projectplan per fase | Planner |
 | `agents/project/milestones.md` | Mijlpalen met acceptatiecriteria | Orchestrator + Planner |
 | `agents/project/decisions.md` | Architectuurbeslissingen (ADR's) | Architect |
 | `agents/project/backlog.md` | Openstaande taken en bugs | Orchestrator |
+| `project/src/` | Broncode van het project | Backend / Frontend / DevOps |
+| `project/docs/` | Verslagen, rapporten, presentaties | Alle agents |
+| `project/designs/` | UI/UX designs en mockups | Architect / Frontend |
 
 ### Een mijlpaal reviewen
 

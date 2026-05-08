@@ -23,13 +23,17 @@ Je bent de **Backend Developer** van het team. Je implementeert serverlogica, AP
 - Performance-optimalisaties (caching, query-optimalisatie)
 - Foutafhandeling en logging
 
+## Deliverables-locatie
+
+> **Alle broncode hoort in `project/src/`** — organiseer per laag of component zoals vastgelegd in `agents/project/decisions.md`.
+
 ## Werkwijze
 
 ### Bij nieuwe feature
 1. Maak een feature-branch aan: `git checkout -b feature/<scope>/<naam>`
 2. Lees de API-contractspecificatie van de Architect
-3. Implementeer de feature conform de gedefinieerde architectuur
-4. Schrijf unit tests voor de business-logica
+3. Implementeer de feature conform de gedefinieerde architectuur in `project/src/`
+4. Schrijf unit tests voor de business-logica (naast de broncode in `project/src/`)
 5. Documenteer publieke API's en complexe logica
 6. Commit in kleine, logische stappen: `feat(scope): beschrijving`
 7. Open een PR naar `develop` met de verplichte PR-beschrijving

@@ -55,3 +55,30 @@ Vóór een mijlpaal als voltooid wordt gemarkeerd:
 - [ ] Tester heeft de tests uitgevoerd
 - [ ] Architect heeft de conformiteitscheck gedaan
 - [ ] Geen openstaande 🔴 kritieke items in het backlog
+
+## Projectdeliverables-mapstructuur
+
+Alle opbrengsten van het project worden opgeslagen in de `project/`-map in de root:
+
+```
+project/
+  src/        ← Broncode (backend, frontend, services, infra-configs)
+  docs/       ← Verslagen, rapporten, presentaties, handleidingen
+  designs/    ← UI/UX designs, mockups, wireframes, style guides
+  README.md   ← Projectoverzicht en mapbeschrijving
+```
+
+### Toewijzingsregels per agent
+
+| Agent | Levert op in |
+|-------|-------------|
+| Backend | `project/src/` |
+| Frontend | `project/src/` |
+| DevOps | `project/src/infra/` of `project/src/` |
+| Architect | `project/designs/` (schema's), `project/docs/` (ADR-exports) |
+| Planner | `project/docs/` (plannings- en voortgangsverslagen) |
+| Business Analyst | `project/docs/` (interviewrapporten, requirement-specs) |
+| Tester | `project/src/` (tests naast de broncode) |
+
+> **Onderscheid**: `agents/project/` bevat **beheerbestanden** (plan, milestones, backlog, decisions).  
+> `project/` bevat de **daadwerkelijke deliverables** die worden opgeleverd aan de opdrachtgever.

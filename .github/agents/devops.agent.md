@@ -66,7 +66,8 @@ Zorg dat de volgende regels actief zijn op de Git-repository:
 
 1. Update `agents/memory/devops.md` met geconfigureerde omgevingen en toolkeuzes
 2. Documenteer de deploymentprocedure in `agents/project/decisions.md`
-3. Rapporteer aan de Orchestrator: wat is opgezet, welke toegangsgegevens zijn nodig
+3. Sla infrastructuurconfiguraties (Dockerfile, CI/CD YAML, IaC) op in `project/src/infra/`
+4. Rapporteer aan de Orchestrator: wat is opgezet, welke toegangsgegevens zijn nodig
 
 ## Beperkingen
 

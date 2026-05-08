@@ -1,0 +1,16 @@
+# Broncode
+
+Plaats hier alle projectgerelateerde broncode. Organiseer per component of laag, bijvoorbeeld:
+
+```
+src/
+  api/          ← Backend API-endpoints en controllers
+  services/     ← Business-logica en services
+  domain/       ← Domeinmodellen en entiteiten
+  frontend/     ← Frontend-applicatie (of aparte map per app)
+  shared/       ← Gedeelde code, utilities, types
+  infra/        ← Infrastructuurconfiguraties (Docker, CI/CD)
+```
+
+> De exacte structuur wordt bepaald door de Architect op basis van de gekozen technologiestack.  
+> Zie `agents/project/decisions.md` voor de geldende architectuurkeuzes.

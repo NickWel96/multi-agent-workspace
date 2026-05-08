@@ -40,6 +40,11 @@ Na de bovenstaande stappen:
 1. Update `agents/memory/orchestrator.md` met het nieuwe project
 2. Vul de teamstatus-tabel in
 3. Zet de eerste sprint-taken in `agents/project/backlog.md`
+4. Maak de **project-deliverables-mapstructuur** aan als die nog niet bestaat:
+   - `project/src/` — voor alle broncode
+   - `project/docs/` — voor verslagen, rapporten en presentaties
+   - `project/designs/` — voor designs en mockups
+   - Pas `project/README.md` aan met de projectnaam en een korte beschrijving
 
 ## Stap 5: Rapporteer aan de gebruiker
 

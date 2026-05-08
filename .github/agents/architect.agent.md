@@ -57,9 +57,19 @@ graph TD
 ## Na architectuursessie
 
 1. Sla de beslissing op in `agents/project/decisions.md`
-2. Update `agents/memory/architect.md` met de gekozen stack en patronen
-3. Informeer Backend/Frontend/DevOps over de gevolgen voor hun werk
-4. Review openstaande PR's die architectuurwijzigingen bevatten
+2. Exporteer architectuurdiagrammen naar `project/designs/` (als PNG of als Mermaid-bronbestand)
+3. Update `agents/memory/architect.md` met de gekozen stack en patronen
+4. Informeer Backend/Frontend/DevOps over de gevolgen voor hun werk
+5. Review openstaande PR's die architectuurwijzigingen bevatten
+
+## Deliverables-locatie
+
+| Deliverable | Bestemming |
+|-------------|-----------|
+| Architectuurdiagrammen, mockups | `project/designs/` |
+| Technische documentatie, ADR-exports | `project/docs/` |
+| ADR-bronbestanden (beheersversie) | `agents/project/decisions.md` |
+| Broncode (nooit zelf schrijven) | `project/src/` via Backend/Frontend |
 
 ## Beperkingen
 

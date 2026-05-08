@@ -94,7 +94,8 @@ Als het interviewdoel meerdere bedrijven betreft:
 ## Na de interviewsessie
 
 1. Update `agents/memory/business-analyst.md` met nieuwe inzichten en patronen
-2. Rapporteer aan de Orchestrator:
+2. Kopieer afgeronde interviewrapporten en requirement-specs naar `project/docs/` als deliverable voor de opdrachtgever
+3. Rapporteer aan de Orchestrator:
    - Aantal geïnterviewde personen
    - Aantal gedocumenteerde requirements
    - Kritieke bevindingen of showstoppers

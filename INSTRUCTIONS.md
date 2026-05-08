@@ -31,6 +31,7 @@ Welkom bij jouw persoonlijke AI-ontwikkelteam. Deze omgeving maakt gebruik van *
     architect.agent.md
     backend.agent.md
     frontend.agent.md
+    ux-designer.agent.md           ← Wireframes, mockups, design system, Google Stitch
     tester.agent.md
     devops.agent.md
     stakeholder.agent.md           ← Persona-agent voor directe stakeholdergesprekken
@@ -80,6 +81,7 @@ INSTRUCTIONS.md                    ← Dit bestand
 | **Architect** | `@Architect` | Technische architectuur, ADR's, API-design |
 | **Backend** | `@Backend` | API's, database, serverlogica |
 | **Frontend** | `@Frontend` | UI-componenten, pagina's, state management |
+| **UX Designer** | `@UX Designer` | Wireframes, mockups, design system, Google Stitch, handoff |
 | **Tester** | `@Tester` | Tests schrijven, kwaliteitsreviews, bugs |
 | **DevOps** | `@DevOps` | CI/CD, Docker, infrastructuur |
 | **Stakeholder** | `@Stakeholder` | Speelt een stakeholder-persona — voor directe gesprekken |

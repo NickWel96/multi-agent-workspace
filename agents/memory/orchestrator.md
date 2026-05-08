@@ -12,6 +12,7 @@ _[Nog geen project gestart]_
 | Architect | — | Beschikbaar |
 | Backend | — | Beschikbaar |
 | Frontend | — | Beschikbaar |
+| UX Designer | — | Beschikbaar |
 | Tester | — | Beschikbaar |
 | DevOps | — | Beschikbaar |
 

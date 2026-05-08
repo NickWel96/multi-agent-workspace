@@ -44,6 +44,7 @@ Een agent escaleert naar de Orchestrator als:
 | Projectscope aanpassen | Orchestrator + gebruiker |
 | Architectuurkeuze | Architect |
 | Implementatiedetails | Backend / Frontend |
+| Design- en UX-beslissingen | UX Designer |
 | Testcriteria | Tester + Planner |
 | Deployment aanpak | DevOps + Architect |
 | Planning aanpassen | Planner + Orchestrator |
@@ -76,6 +77,7 @@ project/
 | Frontend | `project/src/` |
 | DevOps | `project/src/infra/` of `project/src/` |
 | Architect | `project/designs/` (schema's), `project/docs/` (ADR-exports) |
+| UX Designer | `project/designs/` (wireframes, mockups, design system, handoff, Stitch-exports) |
 | Planner | `project/docs/` (plannings- en voortgangsverslagen) |
 | Business Analyst | `project/docs/` (interviewrapporten, requirement-specs) |
 | Tester | `project/src/` (tests naast de broncode) |

@@ -34,6 +34,7 @@ Welkom bij jouw persoonlijke AI-ontwikkelteam. Deze omgeving maakt gebruik van *
     ux-designer.agent.md           ← Wireframes, mockups, design system, Google Stitch
     tester.agent.md
     devops.agent.md
+    legal.agent.md                 ← Wetgeving, compliance-audits, juridisch advies
     stakeholder.agent.md           ← Persona-agent voor directe stakeholdergesprekken
   prompts/
     new-project.prompt.md
@@ -51,7 +52,7 @@ agents/
   project/
     plan.md
     milestones.md
-    decisions.md
+    decisions.md                   ← ADR's (architect) + LAR's (legal)
     backlog.md
     requirements/                  ← User stories & interviewrapporten
       user-stories.md
@@ -61,6 +62,7 @@ agents/
 project/                           ← PROJECTDELIVERABLES (aangemaakt bij nieuw project)
   src/                             ← Broncode (backend, frontend, infra)
   docs/                            ← Verslagen, rapporten, presentaties, handleidingen
+    legal/                         ← Auditrapportages, LAR-exports, compliance-checklists
   designs/                         ← UI/UX designs, mockups, wireframes
   README.md                        ← Projectoverzicht
 INSTRUCTIONS.md                    ← Dit bestand
@@ -84,6 +86,7 @@ INSTRUCTIONS.md                    ← Dit bestand
 | **UX Designer** | `@UX Designer` | Wireframes, mockups, design system, Google Stitch, handoff |
 | **Tester** | `@Tester` | Tests schrijven, kwaliteitsreviews, bugs |
 | **DevOps** | `@DevOps` | CI/CD, Docker, infrastructuur |
+| **Legal** | `@Legal` | Nederlandse & Europese wetgeving, compliance-audits, juridisch advies |
 | **Stakeholder** | `@Stakeholder` | Speelt een stakeholder-persona — voor directe gesprekken |
 
 ### Een agent activeren
@@ -110,6 +113,7 @@ De agent zal vragen stellen over:
 - De gewenste functionaliteiten
 - Technologiestack-voorkeuren
 - Eventuele beperkingen
+- **Of de Legal agent actief moet zijn** — kies `ja` voor projecten met gebruikersdata, B2C, AI/ML of wettelijke verplichtingen; kies `nee` voor interne tools, prototypes of scripts zonder persoonsgegevens. Bij `nee` wordt Legal nooit automatisch ingeschakeld.
 
 ### Stap 4: Laat het team werken
 Na de initiële input:
@@ -288,12 +292,13 @@ Voeg `user-invocable: false` toe aan de frontmatter van de agent om deze uit het
 
 | Bestand/Map | Inhoud | Beheerd door |
 |-------------|--------|-------------|
-| `agents/project/plan.md` | Volledig projectplan per fase | Planner |
+| `agents/project/plan.md` | Volledig projectplan per fase + `legal_agent_enabled` instelling | Planner |
 | `agents/project/milestones.md` | Mijlpalen met acceptatiecriteria | Orchestrator + Planner |
-| `agents/project/decisions.md` | Architectuurbeslissingen (ADR's) | Architect |
+| `agents/project/decisions.md` | Architectuurbeslissingen (ADR's) + juridische beoordelingen (LAR's) | Architect + Legal |
 | `agents/project/backlog.md` | Openstaande taken en bugs | Orchestrator |
 | `project/src/` | Broncode van het project | Backend / Frontend / DevOps |
 | `project/docs/` | Verslagen, rapporten, presentaties | Alle agents |
+| `project/docs/legal/` | Auditrapportages, LAR-exports, compliance-checklists | Legal |
 | `project/designs/` | UI/UX designs en mockups | Architect / Frontend |
 
 ### Een mijlpaal reviewen

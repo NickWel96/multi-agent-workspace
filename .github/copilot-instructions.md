@@ -47,8 +47,11 @@ project/designs/            → UI/UX designs, mockups, wireframes
 | Business Analyst | `business-analyst.agent.md` | Stakeholderinterviews, requirements, user stories |
 | Architect | `architect.agent.md` | Systeemontwerp, technische beslissingen |
 | Backend | `backend.agent.md` | API's, database, serverlogica |
-| Frontend | `frontend.agent.md` | UI/UX, componenten, state management || UX Designer | `ux-designer.agent.md` | Wireframes, mockups, design system, Google Stitch, handoff || Tester | `tester.agent.md` | Testplannen, unit/integratie/e2e-tests |
+| Frontend | `frontend.agent.md` | UI/UX, componenten, state management |
+| UX Designer | `ux-designer.agent.md` | Wireframes, mockups, design system, Google Stitch, handoff |
+| Tester | `tester.agent.md` | Testplannen, unit/integratie/e2e-tests |
 | DevOps | `devops.agent.md` | CI/CD, infrastructuur, deployment |
+| Legal | `legal.agent.md` | Nederlandse & Europese wetgeving, compliance-audits, juridisch advies |
 
 ## Interactieprotocol
 

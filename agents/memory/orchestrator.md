@@ -15,6 +15,7 @@ _[Nog geen project gestart]_
 | UX Designer | — | Beschikbaar |
 | Tester | — | Beschikbaar |
 | DevOps | — | Beschikbaar |
+| Legal | — | Beschikbaar |
 
 ## Lopende prioriteiten
 _[Nog geen prioriteiten gedefinieerd]_

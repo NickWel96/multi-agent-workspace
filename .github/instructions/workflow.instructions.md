@@ -48,6 +48,7 @@ Een agent escaleert naar de Orchestrator als:
 | Testcriteria | Tester + Planner |
 | Deployment aanpak | DevOps + Architect |
 | Planning aanpassen | Planner + Orchestrator |
+| Juridische compliance & wetgeving | Legal (vastleggen als LAR in decisions.md) |
 
 ## Kwaliteitspoorten
 
@@ -55,6 +56,7 @@ Vóór een mijlpaal als voltooid wordt gemarkeerd:
 - [ ] Alle acceptatiecriteria zijn aangevinkt
 - [ ] Tester heeft de tests uitgevoerd
 - [ ] Architect heeft de conformiteitscheck gedaan
+- [ ] Legal heeft compliance-check gedaan voor mijlpalen met juridische impact
 - [ ] Geen openstaande 🔴 kritieke items in het backlog
 
 ## Projectdeliverables-mapstructuur
@@ -77,8 +79,7 @@ project/
 | Frontend | `project/src/` |
 | DevOps | `project/src/infra/` of `project/src/` |
 | Architect | `project/designs/` (schema's), `project/docs/` (ADR-exports) |
-| UX Designer | `project/designs/` (wireframes, mockups, design system, handoff, Stitch-exports) |
-| Planner | `project/docs/` (plannings- en voortgangsverslagen) |
+| UX Designer | `project/designs/` (wireframes, mockups, design system, handoff, Stitch-exports) || Legal | `project/docs/legal/` (auditrapportages, LAR-exports, compliance-checklists) || Planner | `project/docs/` (plannings- en voortgangsverslagen) |
 | Business Analyst | `project/docs/` (interviewrapporten, requirement-specs) |
 | Tester | `project/src/` (tests naast de broncode) |
 

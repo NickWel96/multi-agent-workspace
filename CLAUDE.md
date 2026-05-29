@@ -61,6 +61,40 @@ project/designs/            → UI/UX designs, mockups, wireframes
 9. **PR's zijn scoped**: één logisch geheel per PR. Splits op als dit de review verbetert.
 10. **Deliverables in `project/`**: Broncode → `project/src/`, verslagen/rapporten →
     `project/docs/`, designs/mockups → `project/designs/`.
+11. **Houd beide AI-modellen in sync** (zie sectie hieronder): wijzig je een
+    model-specifiek bestand, pas dan in dezelfde taak het equivalent voor het andere
+    model aan. Dit is een harde regel, geen optie.
+
+## ⚠️ Synchronisatie tussen Claude Code en Copilot (VERPLICHT)
+
+Deze workspace ondersteunt **twee AI-tools tegelijk**: Claude Code (`.claude/` + `CLAUDE.md`)
+en GitHub Copilot (`.github/`). Beide moeten **altijd** dezelfde agents, commando's en regels
+beschrijven.
+
+> **Harde regel**: Wijzig of voeg je een model-specifiek bestand toe, dan pas je in
+> **dezelfde taak** ook de tegenhanger voor het andere model aan. Lever nooit een wijziging op
+> die maar één van beide tools bijwerkt. Vermeld in je rapport expliciet dat beide kanten zijn
+> bijgewerkt.
+
+| Onderwerp | Claude Code | GitHub Copilot |
+|-----------|-------------|----------------|
+| Agent-definities | `.claude/agents/<naam>.md` | `.github/agents/<naam>.agent.md` |
+| Slash-commando's / prompts | `.claude/commands/<naam>.md` | `.github/prompts/<naam>.prompt.md` |
+| Globale instructies | `CLAUDE.md` | `.github/copilot-instructions.md` |
+| Codestandaarden / git / workflow | `.github/instructions/*.instructions.md` (gedeeld; door beide gelezen) | idem |
+| Permissies / tooling | `.claude/settings.json` | `.vscode/mcp.json` / Copilot-config (indien aanwezig) |
+
+**Werkwijze bij een wijziging:**
+1. De **bron** is `.github/` (Copilot-formaat). Wijzig daar de agent of prompt.
+2. Draai `python3 .claude/convert.py` om `.claude/agents/` en `.claude/commands/` te
+   hergenereren — dit vertaalt frontmatter en tools automatisch en houdt de body identiek.
+3. Wijzig je een `CLAUDE.md`-regel handmatig, breng dezelfde wijziging aan in
+   `.github/copilot-instructions.md` (en omgekeerd) — die worden níét door het script
+   gesynchroniseerd.
+4. Controleer dat `convert.py` 11 agents en 7 commando's meldt en commit beide kanten samen.
+
+> Begin je een wijziging aan de Claude Code-zijde (`.claude/`)? Werk dan eerst de Copilot-bron
+> in `.github/` bij en regenereer, zodat de bron leidend blijft en niets uit de pas loopt.
 
 ## Het team — wie doet wat?
 

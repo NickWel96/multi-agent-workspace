@@ -39,6 +39,33 @@ project/designs/            → UI/UX designs, mockups, wireframes
     - Broncode → `project/src/`
     - Verslagen, rapporten, presentaties → `project/docs/`
     - UI/UX designs, mockups, wireframes → `project/designs/`
+11. **Houd beide AI-modellen in sync** (zie sectie hieronder): wijzig je een model-specifiek
+    bestand, pas dan in dezelfde taak het equivalent voor het andere model aan. Harde regel.
+
+## ⚠️ Synchronisatie tussen Copilot en Claude Code (VERPLICHT)
+
+Deze workspace ondersteunt **twee AI-tools tegelijk**: GitHub Copilot (`.github/`) en Claude
+Code (`.claude/` + `CLAUDE.md`). Beide moeten **altijd** dezelfde agents, commando's en regels
+beschrijven.
+
+> **Harde regel**: Wijzig of voeg je een model-specifiek bestand toe, dan pas je in
+> **dezelfde taak** ook de tegenhanger voor het andere model aan. Lever nooit een wijziging op
+> die maar één van beide tools bijwerkt. Meld expliciet dat beide kanten zijn bijgewerkt.
+
+| Onderwerp | GitHub Copilot | Claude Code |
+|-----------|----------------|-------------|
+| Agent-definities | `.github/agents/<naam>.agent.md` | `.claude/agents/<naam>.md` |
+| Prompts / slash-commando's | `.github/prompts/<naam>.prompt.md` | `.claude/commands/<naam>.md` |
+| Globale instructies | `.github/copilot-instructions.md` | `CLAUDE.md` |
+| Codestandaarden / git / workflow | `.github/instructions/*.instructions.md` (gedeeld) | idem |
+
+**Werkwijze bij een wijziging:**
+1. De **bron** is `.github/` (Copilot-formaat). Wijzig daar de agent of prompt.
+2. Draai `python3 .claude/convert.py` om `.claude/agents/` en `.claude/commands/` te
+   hergenereren (vertaalt frontmatter/tools automatisch, body blijft identiek).
+3. Wijzig je deze instructies handmatig, breng dezelfde wijziging aan in `CLAUDE.md` — die
+   wordt níét door het script gesynchroniseerd.
+4. Commit beide kanten samen.
 
 ## Taakverdeling — Wie doet wat?
 

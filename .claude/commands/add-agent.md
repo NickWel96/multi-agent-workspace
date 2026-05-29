@@ -1,9 +1,7 @@
 ---
 description: "Voeg een nieuwe specialistagent toe aan het team: definieer de expertise, maak het agent-bestand en het geheugenbestand aan."
-name: "Agent Toevoegen"
-agent: "agent"
 argument-hint: "Beschrijf de expertise van de nieuwe agent (bijv. 'Security Expert' of 'Data Scientist')..."
-tools: [read, edit, search, todo]
+model: sonnet
 ---
 
 # Nieuwe agent toevoegen aan het team

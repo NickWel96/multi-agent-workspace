@@ -2,6 +2,8 @@
 
 Dit project maakt gebruik van een team van gespecialiseerde AI-agents. Elke agent heeft een eigen expertise, een eigen geheugenbestand en werkt samen met de andere teamleden.
 
+> **Dual-tool compatibiliteit**: Deze workspace werkt met **GitHub Copilot** (`.github/`) én **Claude Code** (`.claude/` + `CLAUDE.md`). De `.github/`-bestanden zijn de bron; de `.claude/`-equivalenten worden hieruit gegenereerd met `python3 .claude/convert.py`. Wijzig je een agent of prompt, draai dan dat script (of werk beide bij) zodat de tools in sync blijven. Zie `CLAUDE_CODE.md` voor de Claude Code-handleiding.
+
 ## Projectstructuur
 
 ```
